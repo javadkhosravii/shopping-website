@@ -1,20 +1,23 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Shop from './pages/shop/Shop';
-import Cart from './pages/cart/Cart';
-import Nav from './components/Nav';
+import Shop from "./pages/shop/Shop";
+import Cart from "./pages/cart/Cart";
+import Nav from "./components/Nav";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ShopContextProvider } from "./context/ShopContext";
 function App() {
   return (
     <div>
-      <Router>
-        <Nav/>
-        <Routes>
-          <Route path="/" element={<Shop/>} />
-          <Route path="/about" element={<Cart/>} />
-        </Routes>
-      </Router>
+      <ShopContextProvider>
+        <Router>
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Shop />} />
+            <Route path="/about" element={<Cart />} />
+          </Routes>
+        </Router>
+      </ShopContextProvider>
     </div>
   );
 }

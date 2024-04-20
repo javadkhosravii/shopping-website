@@ -1,24 +1,18 @@
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from "../Slider";
-import { PRODUCTS } from "../../data/product";
-
+import { PRODUCTS } from "../../data/products";
+import Product from "./product";
 
 const Shop = () => {
   return (
-    <React.Fragment className="flex flex-col container mx-auto m-20">
+    <section>
       <SimpleSlider />
-      <div className="mx-auto container flex mt-8 w-full gap-8 h-44">
-        {PRODUCTS.map((product) => (
-          <div key={product.id}>
-            <h2>{product.productName}</h2>
-            <img src={product.productImage} alt={product.productName} />
-            <p>Price: {product.price}</p>
-          </div>
+      <div className="container mx-auto flex w-full h-full mt-20 justify-center items-center">
+        {PRODUCTS.map((productData) => (
+          <Product key={productData.id} data={productData} />
         ))}
       </div>
-    </React.Fragment>
+    </section>
   );
 };
 
