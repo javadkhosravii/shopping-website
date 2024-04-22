@@ -7,14 +7,14 @@ const Product = (props) => {
 
   const isInCart = cartItems?.some((item) => item.id === id);
   return (
-    <div className="border col-3 p-2 m-2">
+    <div className="border rounded-md w-64 h-64 m-4 p-2">
       <img alt="pic" src={productImage} className="w-50" />
-      <h5> {productName}</h5>
-      <p>price : {price}$</p>
+      <h5 className="text-center font-bold"> {productName}</h5>
+      <p>price : {price}€</p>
       <button className="btn btn-info btn-sm" onClick={() => addToCart(id)}>
         +
       </button>
-      <span className="mx-1">
+      <span className="">
         {cartItems?.filter((row) => row.id === id)[0]?.count}
       </span>
       {isInCart && (
