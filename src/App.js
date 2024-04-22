@@ -5,7 +5,7 @@ import Cart from "./pages/cart/Cart";
 import Nav from "./components/Nav";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ShopContextProvider } from "./context/ShopContext";
+import { ShopContextProvider } from "./context/shopContext";
 function App() {
   return (
     <div>

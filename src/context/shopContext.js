@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { useCart } from "../hook/useCart";
 
-export const ShopContext = createContext({
+export const shopContext = createContext({
   cartItems: null,
   addToCart: () => {},
   removeFromCart: () => {},
@@ -10,8 +10,8 @@ export const ShopContext = createContext({
 
 export const ShopContextProvider = (props) => {
   return (
-    <ShopContext.Provider value={useCart()}>
+    <shopContext.Provider value={useCart()}>
       {props.children}
-    </ShopContext.Provider>
+    </shopContext.Provider>
   );
 };

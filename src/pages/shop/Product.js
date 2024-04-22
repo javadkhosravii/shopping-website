@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { ShopContext } from "../../context/shopContext";
+import { shopContext } from "../../context/shopContext";
 
 const Product = (props) => {
   const { id, productName, productImage, price } = props.data;
-  const { cartItems, addToCart, removeFromCart } = useContext(ShopContext);
+  const { cartItems, addToCart, removeFromCart } = useContext(shopContext);
 
   const isInCart = cartItems?.some((item) => item.id === id);
   return (
