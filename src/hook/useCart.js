@@ -4,15 +4,12 @@ export const useCart = () => {
   const [cartItems, setCartItems] = useState();
 
   useEffect(() => {
-    const data = localStorage.getItem("SarvinStyleCodding_cart");
+    const data = localStorage.getItem("JavadKhosravi_cart");
     setCartItems(!!JSON.parse(data) ? JSON.parse(data) : []);
   }, []);
   useEffect(() => {
     if (cartItems !== undefined)
-      localStorage.setItem(
-        "SarvinStyleCodding_cart",
-        JSON.stringify(cartItems)
-      );
+      localStorage.setItem("JavadKhosravi_cart", JSON.stringify(cartItems));
   }, [cartItems]);
 
   const addToCart = (itemId) => {
@@ -40,7 +37,7 @@ export const useCart = () => {
 
   const resetCart = () => {
     setCartItems();
-    localStorage.removeItem("SarvinStyleCodding_cart");
+    localStorage.removeItem("JavadKhosravi_cart");
     localStorage.clear();
   };
   return { cartItems, addToCart, removeFromCart, resetCart };
