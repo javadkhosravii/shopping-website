@@ -5,6 +5,7 @@ import Product from "../shop/product";
 
 const Cart = () => {
   const { cartItems, resetCart } = useContext(shopContext);
+
   return (
     <React.Fragment>
       <div className="w-full h-full justify-center items-center">
