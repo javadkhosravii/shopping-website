@@ -7,24 +7,28 @@ const Product = (props) => {
 
   const isInCart = cartItems?.some((item) => item.id === id);
   return (
-    <div className="border rounded-md w-64 h-64 m-4 p-2">
-      <img alt="pic" src={productImage} className="w-50" />
-      <h5 className="text-center font-bold"> {productName}</h5>
-      <p>price : {price}€</p>
-      <button className="btn btn-info btn-sm" onClick={() => addToCart(id)}>
-        +
-      </button>
-      <span className="">
-        {cartItems?.filter((row) => row.id === id)[0]?.count}
-      </span>
-      {isInCart && (
-        <button
-          className="btn btn-info btn-sm"
-          onClick={() => removeFromCart(id)}
-        >
-          -
-        </button>
-      )}
+    <div className="border flex rounded-md w-64 h-96 m-4 p-2">
+      <div className="flex flex-col place-items-center gap-4">
+        <img alt="pic" src={productImage} />
+        <h5 className="text-center font-bold"> {productName}</h5>
+        <p>price : {price}€</p>
+        <div className="flex place-items-center gap-2">
+          <button className="btn btn-info btn-sm" onClick={() => addToCart(id)}>
+            +
+          </button>
+          <span className="">
+            {cartItems?.filter((row) => row.id === id)[0]?.count}
+          </span>
+          {isInCart && (
+            <button
+              className="btn btn-info btn-sm"
+              onClick={() => removeFromCart(id)}
+            >
+              -
+            </button>
+          )}
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,11 +1,9 @@
 import bag from "../images/bag.jpg";
 import camera from "../images/camera.png";
 import denim from "../images/denim.jpg";
-import highheel from "../images/high-heel.jpg";
 import laptop from "../images/laptop.jpg";
 import mobile from "../images/mobile.jpg";
 import shoes from "../images/shoes.jpg";
-import sunglass from "../images/sunglass.webp";
 
 export const PRODUCTS = [
   {
@@ -27,12 +25,6 @@ export const PRODUCTS = [
     productImage: denim,
   },
   {
-    id: 4,
-    productName: "Highheel",
-    price: 1700,
-    productImage: highheel,
-  },
-  {
     id: 5,
     productName: "laptop",
     price: 500,
@@ -49,11 +41,5 @@ export const PRODUCTS = [
     productName: "shoes",
     price: 500,
     productImage: shoes,
-  },
-  {
-    id: 8,
-    productName: "sunglass",
-    price: 500,
-    productImage: sunglass,
   },
 ];
