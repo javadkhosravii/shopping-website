@@ -24,6 +24,11 @@ const Cart = () => {
           <button className="btn btn-error m-3 " onClick={resetCart}>
             <p className="text-xl font-normal">Reset items</p>
           </button>
+          <a href="/">
+            <button className="btn btn-primary m-3 text-xl font-normal">
+              back to shop
+            </button>
+          </a>
         </div>
       </div>
     </React.Fragment>
