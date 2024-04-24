@@ -14,7 +14,7 @@ function App() {
           <Nav />
           <Routes>
             <Route path="/" element={<Shop />} />
-            <Route path="/about" element={<Cart />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </Router>
       </ShopContextProvider>
