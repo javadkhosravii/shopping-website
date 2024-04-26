@@ -1,7 +1,7 @@
 import React from "react";
 import SimpleSlider from "../Slider";
 import { PRODUCTS } from "../../data/products";
-import Product from "./product";
+import Product from "./Product";
 
 const Shop = () => {
   return (
