@@ -7,8 +7,8 @@ const Product = (props) => {
 
   const isInCart = cartItems?.some((item) => item.id === id);
   return (
-    <div className="border flex rounded-md w-64 h-96 m-4 p-2">
-      <div className="flex flex-col place-items-center gap-4">
+    <div className="border-2 rounded-lg w-64 h-96 mt-4 p-4">
+      <div className="text-center flex flex-col gap-4">
         <img
           alt="pic"
           src={productImage}
@@ -16,7 +16,7 @@ const Product = (props) => {
         />
         <h5 className="text-center font-bold"> {productName}</h5>
         <p>price : {price}€</p>
-        <div className="flex place-items-center gap-2">
+        <div className="flex justify-center items-center gap-1">
           <button className="btn btn-info btn-sm" onClick={() => addToCart(id)}>
             +
           </button>
