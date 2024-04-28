@@ -11,7 +11,7 @@ const Nav = () => {
   }, 0);
   return (
     <nav className="flex w-full h-20 bg-blue-500 justify-center items-center">
-      <div className="container mx-auto flex justify-between">
+      <div className="container mx-auto flex justify-between smd:px-4 sxs:px-4">
         <a href="/" className="font-bold text-2xl text-white">
           javad khosravi
         </a>
