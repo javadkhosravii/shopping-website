@@ -7,7 +7,7 @@ const Shop = () => {
   return (
     <section>
       <SimpleSlider />
-      <div className="container mx-auto flex">
+      <div className="container mx-auto flex justify-center">
         {PRODUCTS.map((productData) => (
           <Product key={productData.id} data={productData} />
         ))}
