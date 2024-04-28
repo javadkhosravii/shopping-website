@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ShopContextProvider } from "./context/shopContext";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Shop />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
+          <Footer/>
         </Router>
       </ShopContextProvider>
     </div>
