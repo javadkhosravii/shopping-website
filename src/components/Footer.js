@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="w-full h-full bg-[#1c3b35] justify-center items-center">
-      <div className="flex w-full h-full justify-center items-center gap-20">
-        <div className="flex gap-20 p-10 w-full justify-end">
+      <div className="flex w-full h-full justify-center items-center gap-20 slg:gap-1 slg:flex-col">
+        <div className="flex gap-20 p-10 w-full justify-end smd:justify-center smd:items-center slg:gap-8 slg:justify-center">
           <ul>
             <h1 className="font-bold text-2xl text-[#b2c9c5]">Shop</h1>
             <li className="text-lg text-[#9db5a5] hover:scale-95 hover:cursor-pointer">
@@ -46,17 +46,17 @@ const Footer = () => {
           <h3 className="font-bold text-lg text-[#b2c9c5] text-center w-full">
             Sign up to get 10% off yout first order
           </h3>
-          <div className="flex w-full gap-2 p-6">
+          <div className="flex w-full gap-2 p-6 smd:justify-center slg:justify-center">
             <input
               type="text"
               placeholder="Your Email Address"
               className="px-4 outline-none rounded-full"
-            /> 
+            />
             <button className="btn rounded-full bg-[#e1b940] border-none hover:bg-[#9db5a5] hover:text-white">
               Subscribe
             </button>
           </div>
-          <div className="flex items-center justify-start px-24 gap-4 w-full">
+          <div className="flex items-center justify-start px-24 gap-4 w-full slg:p-0 slg:w-full smd:justify-center slg:justify-center">
             <p className="font-bold text-md text-[#b2c9c5] text-right">
               Follow us:
             </p>
@@ -103,15 +103,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center gap-80 p-4">
-        <p className="font-bold text-xl text-[#b2c9c5] text-right">
+      <div className="flex justify-center gap-80 p-4 slg:gap-4 slg:flex-col-reverse">
+        <p className="font-bold text-xl text-[#b2c9c5] text-right slg:text-center">
           @2024, All Rights Reserved
         </p>
-        <div className="flex gap-6">
-          <p className="font-bold text-lg text-[#b2c9c5] text-right hover:cursor-pointer">
+        <div className="flex gap-6 slg:justify-center">
+          <p className="font-bold text-lg text-[#b2c9c5] text-right  slg:text-center hover:cursor-pointer">
             Term of Service
           </p>
-          <p className="font-bold text-lg text-[#b2c9c5] text-right hover:cursor-pointer">
+          <p className="font-bold text-lg text-[#b2c9c5] text-right  slg:text-center hover:cursor-pointer">
             Term of Privacy
           </p>
         </div>

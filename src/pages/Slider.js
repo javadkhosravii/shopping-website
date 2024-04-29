@@ -15,10 +15,10 @@ export default function SimpleSlider() {
   };
   return (
     <Slider className="container mx-auto m-4" {...settings}>
-      <div className=" lg:hidden">
+      <div>
         <img className="rounded-lg" src={banner3} alt="" />
       </div>
-      <div className=" lg:hidden">
+      <div>
         <img className="rounded-lg" src={banner4} alt="" />
       </div>
     </Slider>
