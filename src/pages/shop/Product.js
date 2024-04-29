@@ -7,7 +7,7 @@ const Product = (props) => {
 
   const isInCart = cartItems?.some((item) => item.id === id);
   return (
-    <div className="border-2 rounded-lg w-64 h-96 mt-4 p-4">
+    <div className="border-2 rounded-lg w-64 h-96 mt-4 p-4 slg:flex-wrap slg:p-6">
       <div className="text-center flex flex-col gap-4">
         <img
           alt="pic"
