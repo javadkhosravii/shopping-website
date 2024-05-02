@@ -50,7 +50,7 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Your Email Address"
-              className="px-4 outline-none rounded-full"
+              className="px-4 outline-none rounded-full xl:w-96"
             />
             <button className="btn rounded-full bg-[#e1b940] border-none hover:bg-[#9db5a5] hover:text-white">
               Subscribe
