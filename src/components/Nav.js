@@ -17,6 +17,11 @@ const Nav = () => {
         </a>
         <ul className="flex justify-center items-center gap-4">
           <li>
+            <Link to="/blog" className="text-white">
+              Blog
+            </Link>
+          </li>
+          <li>
             <Link to="/" className="text-white">
               Shop
             </Link>
